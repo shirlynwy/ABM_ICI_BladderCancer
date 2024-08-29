@@ -2,12 +2,12 @@ function setup = baseSetup()
 
 setup.start_day = -1; % start on Sunday
 
-setup.grid_size_microns_x = 400;
-setup.grid_size_microns_y = 400;
-setup.grid_size_microns_z = 400;
+setup.grid_size_microns_x = 1000;
+setup.grid_size_microns_y = 1000;
+setup.grid_size_microns_z = 1000;
 
 setup.censor_date = 20;
-setup.N0 = 100;
+setup.N0 = 20;
 setup.NI0 = 0;
 
 setup.c = -3.603357085551339; % see Test_findInitialization for code that got to this number

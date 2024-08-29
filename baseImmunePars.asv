@@ -17,7 +17,7 @@ immune_pars.deactivation_rate_pd1 = 1 / (8/24); % max deactivation rate of CTLs 
 immune_pars.slow_kill_rate = 1 / (2/24); % rate of slow kill in days^-1 (should be once per 2 hours)
 immune_pars.fast_kill_rate = 1 / (.5/24); % rate of fast kill in days^-1 (should be once per half hour)
 
-%% aicd pars, No AICD in this ABM
+%% aicd pars
 immune_pars.time_to_seek = 2 / 24; % time for an immune cell to seek before beginning to undergo AICD (activation-induced cell death)
 immune_pars.extra_seek_time_on_arrival = Inf / 24; % time for an immune cell to seek before beginning to undergo AICD (activation-induced cell death)
 immune_pars.aicd_rate = 0; % No AICD in this ABM
@@ -33,13 +33,13 @@ immune_pars.immune_recruit_rate2 = 8; % immune cells recruited per day
 %% immune stimulatory factor parameters
 immune_pars.isf_prolif_ec50 = 10;
 immune_pars.isf_prolif_hill_coefficient = 2;
-immune_pars.isf_prolif_saturation_factor = 2.5; % Not used in this ABM
+immune_pars.isf_prolif_saturation_factor = 2.5;
 immune_pars.isf_prolif_max = 0.15; %maximum antigen stimulated proliferation rate
 
 immune_pars.isf_gradient_hill_coefficient = 2;
 
-immune_pars.deactivation_ec50_isf = 50; % Not used in this ABM
-immune_pars.deactivation_hill_coefficient_isf = 4; % Not used in this ABM
+immune_pars.deactivation_ec50_isf = 50;
+immune_pars.deactivation_hill_coefficient_isf = 4;
 
 immune_pars.low_antigen_isf_factor = 0.5;
 
